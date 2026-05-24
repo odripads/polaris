@@ -1,0 +1,11 @@
+topic_n,label,theoretical_class,disavowal_relevance
+1,Petroleum fiscal regime,EXTRACTIVE / FISCAL,"High <e2><80><94> petroleum framed as state revenue, not extraction"
+2,Welfare state / social services,WELFARE LEGITIMATION,Medium <e2><80><94> petroleum revenues fund welfare; cutting them threatens services
+3,Parliamentary procedure / law,PROCEDURAL,Low <e2><80><94> procedural
+4,Energy transition & industry,DISAVOWAL (managed transition),Very High <e2><80><94> core managed-transition disavowal site
+5,Adversarial floor debate,DISAVOWAL UNDER PRESSURE,Very High <e2><80><94> unscripted disavowal maintenance under adversarial pressure
+6,Nynorsk speech register,REGISTER (not topical),Low <e2><80><94> dialect marker
+7,Climate policy & emissions,GREEN IDENTITY PERFORMANCE,High <e2><80><94> green identity performance; disavowal's affirmative side
+8,Transport & infrastructure,EMISSION REDUCTION / TRANSITION,Medium <e2><80><94> emission reductions without naming extraction
+9,Foreign policy & geopolitics,GEOPOLITICAL FRAME,Medium <e2><80><94> energy security legitimates continued extraction post-Ukraine
+10,Nature & biodiversity / rural,NATURE / LAND,Low <e2><80><94> biodiversity separate from petroleum discourse

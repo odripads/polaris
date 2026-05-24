@@ -1,0 +1,6 @@
+model,group,variance,icc,pct
+Model A (party + session),party,0.04751524590369864,0.014148954979720312,1.4148954979720312
+Model A (party + session),session_id,0.020832543187235614,0.00620345554491451,0.620345554491451
+Model B (party + session + speaker),speaker_name,1.2063216936676564,0.2671780820658987,26.717808206589872
+Model B (party + session + speaker),party,0,0,0
+Model B (party + session + speaker),session_id,0.018857531086951144,0.004176596520445013,0.4176596520445013
