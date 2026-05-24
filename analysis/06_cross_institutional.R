@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 06: Cross-Institutional Comparison (Phase 1 + Phase 2)
+# POLARIS Analysis — Script 06: Cross-Institutional Comparison (Phase 1 + Phase 2)
 # Kalcer Institute | Odri | May 2026
 #
 # Compares Parliament (Phase 1) vs NBIM (Phase 2) on key vocabulary rates.
@@ -130,10 +130,10 @@ p_cross <- comparison %>%
   coord_flip() +
   labs(
     title    = "Key term rates: Parliament vs NBIM",
-    subtitle = "Rate per 10,000 words | NGDC Phase 1 + Phase 2",
+    subtitle = "Rate per 10,000 words | POLARIS Phase 1 + Phase 2",
     x = NULL, y = "Rate per 10,000 words",
     fill     = NULL,
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -163,7 +163,7 @@ p_ratio <- comparison_wide %>%
     subtitle = "How many times more frequent is each term in NBIM vs Parliament?\n> 1x = NBIM uses it more; < 1x = Parliament uses it more",
     x = NULL, y = "NBIM rate ÷ Parliament rate (log scale)",
     fill     = NULL,
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(

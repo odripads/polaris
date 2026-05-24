@@ -1,8 +1,8 @@
-# NGDC Codebook — Variable Definitions
+# POLARIS Codebook — Variable Definitions
 
-**Norwegian Green Discourse Corpus (NGDC)** | Kalcer Institute | v1.0 | May 2026
+**POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget)** | Kalcer Institute | v1.0 | May 2026
 
-This codebook defines all variables in the NGDC processed data files. It covers Phase 1 (Stortinget plenary corpus) and Phase 2 (NBIM and government document corpus).
+This codebook defines all variables in the POLARIS processed data files. It covers Phase 1 (Stortinget plenary corpus) and Phase 2 (NBIM and government document corpus).
 
 ---
 

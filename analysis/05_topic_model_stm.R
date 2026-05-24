@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 05: Structural Topic Model (STM)
+# POLARIS Analysis — Script 05: Structural Topic Model (STM)
 # Kalcer Institute | Odri | May 2026
 #
 # STM (Roberts et al. 2019) is ideal here because it allows covariates —
@@ -132,9 +132,9 @@ p_prop <- prop_df %>%
   coord_flip() +
   labs(
     title    = "STM topic proportions (K=10)",
-    subtitle = "Top FREX terms shown | NGDC filtered corpus (N=15,210 speeches)",
+    subtitle = "Top FREX terms shown | POLARIS filtered corpus (N=15,210 speeches)",
     x = NULL, y = "Mean topic proportion",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 11) +
   theme(plot.title = element_text(face = "bold"))

@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 01: Corpus Build
+# POLARIS Analysis — Script 01: Corpus Build
 # Kalcer Institute | Odri | May 2026
 #
 # Loads all filtered session CSVs, cleans party codes (incl. mixed-case

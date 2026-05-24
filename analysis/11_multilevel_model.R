@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Inferential Analysis — Script 11: Multilevel / Mixed-Effects Model
+# POLARIS Inferential Analysis — Script 11: Multilevel / Mixed-Effects Model
 # Kalcer Institute | Odri | May 2026
 #
 # Speeches are not independent — they cluster within:
@@ -147,7 +147,7 @@ p_re_party <- re_party %>%
     title    = "Party-level random effects (log-odds deviation from grand mean)",
     subtitle = "Model B: has_petroleum ~ year + speech_type + (1|party) + (1|session) + (1|speaker)\nControlling for year and speech type — residual party-level variation",
     x = NULL, y = "Random intercept (log-odds)",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -169,7 +169,7 @@ p_re_session <- re_session %>%
     title    = "Session-level random effects (log-odds deviation)",
     subtitle = "After controlling for year trend — residual session-level context effects",
     x = "Session start year", y = "Random intercept (log-odds)",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -197,7 +197,7 @@ p_icc <- icc_B %>%
     title    = "Variance decomposition: what explains petroleum mention rates?",
     subtitle = "ICC from mixed-effects logistic regression (Model B)\nRemainder = individual speech-level variation (unexplained)",
     x = NULL, y = "% of total variance",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())

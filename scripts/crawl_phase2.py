@@ -1,5 +1,5 @@
 """
-NGDC Phase 2 Crawler — Secondary Sources
+POLARIS Phase 2 Crawler — Secondary Sources
 Script: crawl_phase2.py
 
 Sources:
@@ -206,7 +206,7 @@ def crawl_regj_doc(doc_id, meta):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"\nNGDC Phase 2 Crawler — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"\nPOLARIS Phase 2 Crawler — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
 
     print("\n[1] NBIM Annual Reports & Responsible Investment Reports")

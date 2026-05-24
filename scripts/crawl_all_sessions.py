@@ -1,5 +1,5 @@
 """
-NGDC — Norwegian Green Discourse Corpus
+POLARIS Corpus
 Script: crawl_all_sessions.py
 
 Purpose:
@@ -42,7 +42,7 @@ ALL_SESSIONS = [
     "2024-2025",
 ]
 
-# Keyword lists from NGDC curation logic (briefing Section 4)
+# Keyword lists from POLARIS curation logic (briefing Section 4)
 KEYWORDS_CORE = [
     "petroleum", "olje", "klimaendring", "klima", "energiomstilling",
     "fornybar energi", "fornybar", "bærekraft", "oljefondet", "nbim",
@@ -211,7 +211,7 @@ def main():
     os.makedirs(proc_dir, exist_ok=True)
 
     start = datetime.now()
-    log(f"NGDC Full Crawl — {start.strftime('%Y-%m-%d %H:%M:%S')}", logfile)
+    log(f"POLARIS Full Crawl — {start.strftime('%Y-%m-%d %H:%M:%S')}", logfile)
     log(f"Sessions: {ALL_SESSIONS}", logfile)
     log("=" * 60, logfile)
 

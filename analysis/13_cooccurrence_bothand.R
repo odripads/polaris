@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 13: The "Both/And" Frame + Fund Naming
+# POLARIS Analysis — Script 13: The "Both/And" Frame + Fund Naming
 # Kalcer Institute | Odri | May 2026
 #
 # Two analyses:
@@ -99,10 +99,10 @@ p_bothand <- bothand_time %>%
   scale_x_continuous(breaks = 2016:2024) +
   labs(
     title    = "The 'both/and' frame: petroleum co-occurring with klima and fornybar",
-    subtitle = "Rate of co-occurrence in the same speech | NGDC filtered corpus",
+    subtitle = "Rate of co-occurrence in the same speech | POLARIS filtered corpus",
     x = "Session start year", y = "% of corpus speeches",
     color    = NULL,
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -139,7 +139,7 @@ p_bothand_party <- bothand_party %>%
     title    = "Both/and speeches by party",
     subtitle = "% of each party's speeches mentioning BOTH petroleum* AND klima*\nThese speeches are the densest sites of managed disavowal",
     x = NULL, y = "% both/and speeches",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -227,7 +227,7 @@ p_naming <- naming_time %>%
     subtitle = "Rate per 10,000 words | Does parliament name the oil, or suppress it?\nRed = 'Oil Fund' (names origin) | Dark = official names (suppress origin)",
     x = "Session start year", y = "Rate per 10,000 words",
     color    = NULL,
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -252,7 +252,7 @@ p_naming_share <- naming_time %>%
     subtitle = "% of fund mentions (Oljefondet + SPU + NBIM) that use the oil-naming form\nDeclining share = parliament progressively suppresses the oil origin of the fund",
     x = "Session start year",
     y = "Share of fund refs using 'Oljefondet'",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -283,7 +283,7 @@ p_naming_party <- naming_party %>%
     title    = "Which parties name the oil?",
     subtitle = "Share of fund references using 'Oljefondet' (vs SPU/NBIM) by party\nAbove 50%: oil-naming dominant | Below 50%: institutional naming dominant",
     x = NULL, y = "Share using 'Oljefondet'",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())

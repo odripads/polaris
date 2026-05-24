@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Inferential Analysis — Script 10: Trend Tests + Interrupted Time Series
+# POLARIS Inferential Analysis — Script 10: Trend Tests + Interrupted Time Series
 # Kalcer Institute | Odri | May 2026
 #
 # 1. Mann-Kendall trend test: is the petroleum/klima ratio decline monotonic
@@ -151,7 +151,7 @@ p_its <- ggplot(its_dat, aes(x = year_start)) +
     ),
     x = "Session start year",
     y = "Petroleum/klima speech ratio",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -228,7 +228,7 @@ p_perm <- ggplot(perm_df, aes(x = null_variance)) +
                        n_perm, p_val_perm),
     x = "Between-party variance (shuffled party labels)",
     y = "Count",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())

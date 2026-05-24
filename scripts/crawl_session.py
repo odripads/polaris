@@ -1,5 +1,5 @@
 """
-NGDC — Norwegian Green Discourse Corpus
+POLARIS Corpus
 Script: crawl_session.py
 
 Purpose:
@@ -31,7 +31,7 @@ from datetime import datetime
 API_BASE = "https://data.stortinget.no/eksport"
 DELAY    = 0.7   # seconds between API calls (rate limit: 100/min)
 
-# Keyword lists as defined in the NGDC curation logic (Section 4 of briefing)
+# Keyword lists as defined in the POLARIS curation logic (Section 4 of briefing)
 # These are the discursive sites where green identity and extractivism collide
 
 KEYWORDS_CORE = [

@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 08: STM Topic Interpretation
+# POLARIS Analysis — Script 08: STM Topic Interpretation
 # Kalcer Institute | Odri | May 2026
 #
 # Takes the converged STM model and produces interpretable outputs:
@@ -95,10 +95,10 @@ p_topics <- prop_df %>%
   scale_y_continuous(labels = percent_format()) +
   coord_flip() +
   labs(
-    title    = "STM topic structure of the NGDC corpus (K=10)",
+    title    = "STM topic structure of the POLARIS corpus (K=10)",
     subtitle = "Topic proportions with theoretical annotation | N = 15,210 speeches\nColour: purple = disavowal site; green = green identity; red = extractive/fiscal",
     x = NULL, y = "Mean topic proportion",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -145,7 +145,7 @@ p_heatmap <- party_topic_mean %>%
     subtitle = "Mean proportion of each topic in each party's corpus speeches\nOrdered left–right by political position",
     x = "Party ←left | right→", y = NULL,
     fill     = "Topic proportion",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 11) +
   theme(
@@ -193,7 +193,7 @@ p_year <- topic_year %>%
     subtitle = "Theoretically relevant topics only | Shows shift from fiscal petroleum to transition/climate",
     x = "Session start year", y = "Mean topic proportion",
     color    = NULL,
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(

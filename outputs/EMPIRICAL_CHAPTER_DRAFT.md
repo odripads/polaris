@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This chapter presents the first systematic, corpus-based analysis of disavowal in Norwegian state discourse on petroleum and climate. Drawing on the Norwegian Green Discourse Corpus (NGDC, v1.0) — 15,210 keyword-matched plenary speeches from the Stortinget (2016–2025) and 19 NBIM institutional documents (2015–2024) — I demonstrate that the Lacanian-Žižekian structure of disavowal (*Verleugnung*: *I know very well, but nevertheless…*) operates not as individual rhetorical choice but as a structural feature of Norwegian state discourse as a whole. The evidence is fourfold: (1) the probability of a parliamentary speech naming petroleum declines by 11.4% per year (OR = 0.886, p < 0.001) while petroleum extraction continues or increases; (2) party membership explains zero percent of the variance in petroleum mention rates — the discursive pattern is structurally uniform across the ideological spectrum; (3) the oil fund is linguistically bifurcated — parliament names its origin (*Oljefondet*, the Oil Fund) while the fund's own discourse suppresses origin entirely, using "carbon neutral" at 51.7 times Parliament's rate; (4) the dominant discourse type in the corpus is adversarial floor debate where the managed contradiction must be defended under pressure.
+This chapter presents the first systematic, corpus-based analysis of disavowal in Norwegian state discourse on petroleum and climate. Drawing on the POLARIS Corpus (POLARIS, v1.0) — 15,210 keyword-matched plenary speeches from the Stortinget (2016–2025) and 19 NBIM institutional documents (2015–2024) — I demonstrate that the Lacanian-Žižekian structure of disavowal (*Verleugnung*: *I know very well, but nevertheless…*) operates not as individual rhetorical choice but as a structural feature of Norwegian state discourse as a whole. The evidence is fourfold: (1) the probability of a parliamentary speech naming petroleum declines by 11.4% per year (OR = 0.886, p < 0.001) while petroleum extraction continues or increases; (2) party membership explains zero percent of the variance in petroleum mention rates — the discursive pattern is structurally uniform across the ideological spectrum; (3) the oil fund is linguistically bifurcated — parliament names its origin (*Oljefondet*, the Oil Fund) while the fund's own discourse suppresses origin entirely, using "carbon neutral" at 51.7 times Parliament's rate; (4) the dominant discourse type in the corpus is adversarial floor debate where the managed contradiction must be defended under pressure.
 
 ---
 
@@ -22,9 +22,9 @@ This chapter provides that evidence.
 
 ## 2. Data and Methods
 
-### 2.1 The Norwegian Green Discourse Corpus
+### 2.1 The POLARIS Corpus
 
-The NGDC (v1.0) comprises two phases. Phase 1 is a corpus of Stortinget plenary debate transcripts: all keyword-matched speeches from the 2016–17 through 2024–25 parliamentary sessions (N = 15,210 speeches from a total of ~103,000 extracted), collected via the Stortinget public API. The corpus begins in 2016 — the year of Norwegian ratification of the Paris Agreement — and extends through the 2024–25 session. Phase 2 comprises 19 NBIM (Norges Bank Investment Management) annual and responsible investment reports (2015–2024), collected from nbim.no.
+POLARIS (v1.0) comprises two phases. Phase 1 is a corpus of Stortinget plenary debate transcripts: all keyword-matched speeches from the 2016–17 through 2024–25 parliamentary sessions (N = 15,210 speeches from a total of ~103,000 extracted), collected via the Stortinget public API. The corpus begins in 2016 — the year of Norwegian ratification of the Paris Agreement — and extends through the 2024–25 session. Phase 2 comprises 19 NBIM (Norges Bank Investment Management) annual and responsible investment reports (2015–2024), collected from nbim.no.
 
 The keyword filter is the corpus's central curatorial decision. Inclusion requires the presence of at least one core keyword from the ideological terrain of the Norway paradox: *petroleum*, *olje* (oil), *klima* (climate), *klimaendring* (climate change), *fornybar energi* (renewable energy), *bærekraft* (sustainability), *energiomstilling* (energy transition), *Oljefondet/NBIM* (the Oil Fund). Extended keywords (*karbonfangst*, *grønn vekst*, *rettferdig omstilling*) trigger inclusion but are flagged separately. This filter is not topical but theoretical: inclusion means a speech participates in the discursive terrain where petroleum and green identity collide.
 
@@ -32,7 +32,7 @@ The keyword filter is the corpus's central curatorial decision. Inclusion requir
 
 Analysis proceeds through three layers. The *descriptive* layer uses frequency analysis, KWIC (keyword-in-context, ±8 tokens, N = 1,997 petroleum instances and 22,854 klima instances), collocational profiling (±5 tokens), and Structural Topic Modelling (STM, K=10, with year and party prevalence covariates; Roberts et al. 2019). The *inferential* layer uses logistic regression (predicting petroleum mention from year, party, and speech type; N = 14,868 speeches), the Mann-Kendall non-parametric trend test, a mixed-effects logistic regression with random intercepts for party, session, and speaker (lme4; Bates et al. 2015), and STM effect estimation with global uncertainty (95% CIs). The *cross-institutional* layer compares term rates per 10,000 words between Parliament (Phase 1) and NBIM (Phase 2).
 
-A note on epistemology: the NGDC is a full population corpus — not a probability sample — covering all keyword-matched plenary speeches in the period. Inferential statistics are justified under the superpopulation model standard in corpus linguistics (Gries 2021): speeches are treated as draws from the distribution of all possible parliamentary speech the Norwegian state could have produced. Effect sizes with confidence intervals are the primary output; p-values are evidence-strength indicators.
+A note on epistemology: POLARIS is a full population corpus — not a probability sample — covering all keyword-matched plenary speeches in the period. Inferential statistics are justified under the superpopulation model standard in corpus linguistics (Gries 2021): speeches are treated as draws from the distribution of all possible parliamentary speech the Norwegian state could have produced. Effect sizes with confidence intervals are the primary output; p-values are evidence-strength indicators.
 
 ---
 
@@ -221,7 +221,7 @@ Norway knows it is a petrostate. Nevertheless.
 
 ## Data and Code Availability
 
-All data, scripts, and outputs are available in the Norwegian Green Discourse Corpus (NGDC, v1.0):
+All data, scripts, and outputs are available in the POLARIS Corpus (POLARIS, v1.0):
 `https://github.com/[odripads]/ngdc`
 
 Scripts: `analysis/01–13_*.R` | Figures: `outputs/figures/` | Tables: `outputs/tables/`

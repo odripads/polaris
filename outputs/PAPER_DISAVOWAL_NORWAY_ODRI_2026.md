@@ -8,7 +8,7 @@ Kalcer Institute / Department of Politics and Government, Universitas Gadjah Mad
 
 ## Abstract
 
-How does a liberal democracy sustain petroleum extraction at historically high levels while simultaneously performing global leadership in climate transition? This paper argues that Norway's case is not a paradox to be resolved but a structure to be explained. Drawing on two complementary bodies of evidence — a systematic corpus analysis of 15,210 Norwegian parliamentary speeches (2016–2025) using the Norwegian Green Discourse Corpus (NGDC, v1.0) and twenty semi-structured interviews with civil society actors, politicians, civil servants, and researchers — we demonstrate that disavowal (*Verleugnung*: *I know very well, but nevertheless…*), in Zupančič's Lacanian formulation, operates in Norway not as individual rhetorical failure but as a structural political achievement distributed across institutional sites, discursive positions, and subjective investments.
+How does a liberal democracy sustain petroleum extraction at historically high levels while simultaneously performing global leadership in climate transition? This paper argues that Norway's case is not a paradox to be resolved but a structure to be explained. Drawing on two complementary bodies of evidence — a systematic corpus analysis of 15,210 Norwegian parliamentary speeches (2016–2025) using the POLARIS Corpus (POLARIS, v1.0) and twenty semi-structured interviews with civil society actors, politicians, civil servants, and researchers — we demonstrate that disavowal (*Verleugnung*: *I know very well, but nevertheless…*), in Zupančič's Lacanian formulation, operates in Norway not as individual rhetorical failure but as a structural political achievement distributed across institutional sites, discursive positions, and subjective investments.
 
 The corpus provides five interlocking empirical findings: (1) the probability of a parliamentary speech naming petroleum declines by 11.4% per year (OR = 0.886, p < 0.001) while extraction continues at record levels; (2) party membership explains approximately zero percent of variance in petroleum mention rates, confirming that the pattern is structural rather than ideological; (3) the Norway Government Pension Fund Global (NBIM) — built entirely on petroleum revenues — uses the term "carbon neutral" at 51.7 times Parliament's rate while naming "petroleum," "oil," and "extraction" at zero frequency; (4) parliament persistently names the fund as *Oljefondet* (Oil Fund) rather than by its official de-oiled title — preserving petroleum as historical achievement while suppressing it as ongoing activity; and (5) the "both/and" co-occurrence of petroleum and climate language in the same speech rises sharply, suggesting that disavowal has become an increasingly managed, explicit discursive performance.
 
@@ -28,7 +28,7 @@ This is what journalists call the Norwegian paradox. Scholars in discourse analy
 
 This paper argues that the Norwegian case is not a paradox awaiting resolution but a structural achievement. Drawing on Alenka Zupančič's (2024) formulation of disavowal — *je sais bien, mais quand même* (I know it very well, but still…) — we argue that the Norwegian state has not resolved the contradiction between green identity and petroleum extraction. It has organized the contradiction symbolically so that it is livable without being resolved. This organization is not cynical performance but genuine inhabitation: actors across all positions simultaneously hold the contradiction and cannot act on its full weight because their structural positions foreclose the action that knowledge would demand.
 
-This argument requires two kinds of evidence. The first is *corpus* evidence: systematic, quantitative demonstration that disavowal operates across the whole of Norwegian parliamentary discourse — not only in particular speeches, certain parties, or particular sessions, but as the structural tendency of the institution as a whole. The second is *ethnographic* evidence: accounts from within the system of how actors inhabit contradictory positions, what makes them livable, and how they are rationalized. The Norwegian Green Discourse Corpus (NGDC, v1.0) provides the first; twenty semi-structured interviews with civil society actors, politicians, civil servants, and researchers conducted between May 2025 and November 2025 provide the second.
+This argument requires two kinds of evidence. The first is *corpus* evidence: systematic, quantitative demonstration that disavowal operates across the whole of Norwegian parliamentary discourse — not only in particular speeches, certain parties, or particular sessions, but as the structural tendency of the institution as a whole. The second is *ethnographic* evidence: accounts from within the system of how actors inhabit contradictory positions, what makes them livable, and how they are rationalized. The POLARIS Corpus (POLARIS, v1.0) provides the first; twenty semi-structured interviews with civil society actors, politicians, civil servants, and researchers conducted between May 2025 and November 2025 provide the second.
 
 The paper proceeds as follows. Section 2 introduces the theoretical framework. Section 3 describes data and methods. Sections 4–8 present the five key corpus findings. Section 9 maps the four structural mechanisms of disavowal from the qualitative evidence. Section 10 applies the Ethical Square. Section 11 synthesizes and concludes.
 
@@ -56,13 +56,13 @@ This framework guides both the corpus analysis — which tests whether the discu
 
 ## 3. Data and Methods
 
-### 3.1 The Norwegian Green Discourse Corpus (NGDC, v1.0)
+### 3.1 The POLARIS Corpus (POLARIS, v1.0)
 
-The NGDC comprises plenary debate transcripts from the Stortinget (Norwegian Parliament) for all nine parliamentary sessions from 2016–17 through 2024–25 (N = 15,210 keyword-matched speeches from ~103,000 total extracted speeches), collected via the Stortinget public API. The corpus begins in 2016 — the year of Norwegian ratification of the Paris Agreement — the moment Norway formally committed to a green identity while structurally accelerating petroleum extraction. The keyword filter requires the presence of at least one term from the theoretical terrain of the Norwegian paradox: *petroleum*, *olje* (oil), *klima* (climate), *klimaendring* (climate change), *fornybar energi* (renewable energy), *bærekraft* (sustainability), *energiomstilling* (energy transition), *Oljefondet/NBIM*. Extended keywords (*karbonfangst*, *grønn vekst*, *rettferdig omstilling*) trigger inclusion but are flagged separately. This filter is not topical but theoretical: inclusion means a speech operates in the ideological terrain where petroleum and green identity collide.
+POLARIS comprises plenary debate transcripts from the Stortinget (Norwegian Parliament) for all nine parliamentary sessions from 2016–17 through 2024–25 (N = 15,210 keyword-matched speeches from ~103,000 total extracted speeches), collected via the Stortinget public API. The corpus begins in 2016 — the year of Norwegian ratification of the Paris Agreement — the moment Norway formally committed to a green identity while structurally accelerating petroleum extraction. The keyword filter requires the presence of at least one term from the theoretical terrain of the Norwegian paradox: *petroleum*, *olje* (oil), *klima* (climate), *klimaendring* (climate change), *fornybar energi* (renewable energy), *bærekraft* (sustainability), *energiomstilling* (energy transition), *Oljefondet/NBIM*. Extended keywords (*karbonfangst*, *grønn vekst*, *rettferdig omstilling*) trigger inclusion but are flagged separately. This filter is not topical but theoretical: inclusion means a speech operates in the ideological terrain where petroleum and green identity collide.
 
 A Phase 2 secondary corpus comprises 19 NBIM (Norges Bank Investment Management / Government Pension Fund Global) annual and responsible investment reports (2015–2024), collected from nbim.no. Cross-institutional comparison between Parliament and NBIM constitutes a central analytic.
 
-The corpus is publicly available at: https://github.com/odripads/ngdc
+The corpus is publicly available at: https://github.com/odripads/polaris
 
 ### 3.2 Computational Methods
 
@@ -84,7 +84,7 @@ Twenty semi-structured interviews were conducted between May and November 2025 w
 
 ## 4. The Declining Petroleum Signifier
 
-The most direct corpus evidence of disavowal is the trajectory of petroleum-to-climate speech ratios across nine parliamentary sessions (2016–2025). Within the NGDC filtered corpus — speeches already selected because they contain at least one keyword from the paradox terrain — petroleum language declines year on year while climate language remains stable or grows.
+The most direct corpus evidence of disavowal is the trajectory of petroleum-to-climate speech ratios across nine parliamentary sessions (2016–2025). Within the POLARIS filtered corpus — speeches already selected because they contain at least one keyword from the paradox terrain — petroleum language declines year on year while climate language remains stable or grows.
 
 **Table 1: Petroleum and klima speech rates by session (% of corpus speeches)**
 
@@ -368,6 +368,6 @@ Zupančič, A. (2024). *Disavowal.* MIT Press.
 
 ---
 
-*Data and replication code: https://github.com/odripads/ngdc*  
+*Data and replication code: https://github.com/odripads/polaris*  
 *Correspondence: Odri Prince Agustinus D Sembiring, Kalcer Institute*  
 *Acknowledgements: Field research supported by NTNU exchange programme, August–December 2025. Informant anonymity maintained throughout; plant-based pseudonyms assigned by researcher.*

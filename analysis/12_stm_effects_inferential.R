@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Inferential Analysis — Script 12: STM Effect Estimates (Inferential)
+# POLARIS Inferential Analysis — Script 12: STM Effect Estimates (Inferential)
 # Kalcer Institute | Odri | May 2026
 #
 # The STM model already estimated prevalence effects with uncertainty.
@@ -127,7 +127,7 @@ p_year_fx <- year_effects_plot %>%
     title    = "STM: effect of year on topic prevalence (with 95% CI)",
     subtitle = "Positive = topic growing over time | Negative = declining\nColour: theoretically key topics | * p<.05 ** p<.01 *** p<.001",
     x = NULL, y = "Estimated effect of year (scaled) on topic proportion",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -156,7 +156,7 @@ p_contrast <- contrast_df %>%
     subtitle = "Positive = group uses topic MORE than rest of corpus\nKey test: do FrP and left bloc differ on energy transition & climate topics?",
     x = NULL, y = "Effect on topic proportion",
     color    = NULL,
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -182,7 +182,7 @@ p_minister <- min_effects %>%
     title    = "STM: Minister (Statsråd) effect on topic prevalence",
     subtitle = "Do ministers speak differently from MPs, controlling for year?\nTheoretical prediction: ministers over-represent T4 (energy transition) and T3 (procedural)",
     x = NULL, y = "Effect of being Minister (Statsråd) on topic proportion",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())

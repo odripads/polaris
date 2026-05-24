@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 03: Party-Level Comparison
+# POLARIS Analysis — Script 03: Party-Level Comparison
 # Kalcer Institute | Odri | May 2026
 #
 # Theoretical claim: disavowal is cross-partisan — it is a property of the
@@ -61,7 +61,7 @@ p5 <- corpus %>%
     title    = "Keyword-matched speeches by party, 2016–2025",
     subtitle = "Total corpus N = 15,210 | Major parties only (N ≥ 50 speeches)",
     x = NULL, y = "Speech count",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -105,7 +105,7 @@ p6 <- vocab_long %>%
     title    = "Vocabulary rates by party: 'petroleum' vs 'klima'",
     subtitle = "% of each party's corpus speeches containing the term",
     x = NULL, y = "% of speeches",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -126,7 +126,7 @@ p7 <- party_vocab %>%
     title    = "Petroleum/Klima ratio by party",
     subtitle = "If disavowal is structural, ratios should be similar across parties\nDashed line = corpus mean",
     x = NULL, y = "Ratio (petroleum rate ÷ klima rate)",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -147,7 +147,7 @@ p8 <- party_vocab %>%
     title    = "Party positions in petroleum–klima vocabulary space",
     subtitle = "Each point = one party; size = corpus share\nDiagonal = equal rates. Above diagonal: more petroleum than klima",
     x = "klima speech rate (%)", y = "petroleum speech rate (%)",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(
@@ -181,7 +181,7 @@ p9 <- party_time %>%
     subtitle = "% of each party's speeches mentioning 'petroleum' — declining across all parties",
     x = "Session start year", y = "% of speeches mentioning 'petroleum'",
     color    = "Party",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(

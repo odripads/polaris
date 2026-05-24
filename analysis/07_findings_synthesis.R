@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 07: Findings Synthesis
+# POLARIS Analysis — Script 07: Findings Synthesis
 # Kalcer Institute | Odri | May 2026
 #
 # Generates the key publication-ready tables and figures that synthesise
@@ -62,7 +62,7 @@ ratio_plot <- summary %>%
     title    = "The petroleum/klima ratio in Stortinget, 2016–2025",
     subtitle = "Speeches naming 'petroleum*' ÷ speeches naming 'klima*'\nFalling ratio = petroleum progressively absent from parliamentary discourse",
     x = NULL, y = "Ratio (petroleum rate ÷ klima rate)",
-    caption  = "Norwegian Green Discourse Corpus (NGDC) v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget) v1.0 | Kalcer Institute, 2026"
   ) +
   theme_pub()
 
@@ -106,7 +106,7 @@ xpar <- ggplot(party_time,
     title    = "Petroleum mention rates by party, 2016–2025",
     subtitle = "% of each party's speeches mentioning 'petroleum*'\nDecline is cross-partisan: structural, not party-political",
     x = "Session start year", y = "% mentioning 'petroleum*'",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_pub()
 
@@ -149,10 +149,10 @@ p_cross <- ggplot(cross_long, aes(x = term, y = rate + 0.001,
   coord_flip() +
   labs(
     title    = "Parliament vs NBIM: key term rates",
-    subtitle = "Rate per 10,000 words (log scale) | NGDC Phase 1 + Phase 2",
+    subtitle = "Rate per 10,000 words (log scale) | POLARIS Phase 1 + Phase 2",
     x = NULL, y = "Rate per 10,000 words (log scale)",
     fill     = NULL,
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_pub()
 

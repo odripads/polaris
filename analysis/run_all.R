@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC — Run all analysis scripts in sequence
+# POLARIS — Run all analysis scripts in sequence
 # Kalcer Institute | Odri | May 2026
 #
 # Usage:  Rscript analysis/run_all.R

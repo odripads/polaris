@@ -1,11 +1,11 @@
-# NGDC — Computational Analysis: Empirical Findings
+# POLARIS — Computational Analysis: Empirical Findings
 **Kalcer Institute | Odri | May 2026**
 
 ---
 
 ## Overview
 
-This document summarises the results of computational research treatment applied to the Norwegian Green Discourse Corpus (NGDC, v1.0). The analysis covers:
+This document summarises the results of computational research treatment applied to the POLARIS Corpus (POLARIS, v1.0). The analysis covers:
 
 - **Phase 1**: Stortinget plenary debates, 2016–2025 (15,210 keyword-matched speeches)
 - **Phase 2**: NBIM annual/responsible-investment reports (19 documents, 2015–2024)

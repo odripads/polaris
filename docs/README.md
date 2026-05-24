@@ -1,4 +1,4 @@
-# Norwegian Green Discourse Corpus (NGDC)
+# POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget)
 
 **Kalcer Institute** | Odri | v1.0 | May 2026
 
@@ -6,11 +6,11 @@
 
 ## Overview
 
-The **Norwegian Green Discourse Corpus (NGDC)** is a structured, documented, and publicly releasable corpus of Norwegian parliamentary discourse on energy, petroleum, and climate transition — curated for the study of **ideological disavowal**.
+The **POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget)** is a structured, documented, and publicly releasable corpus of Norwegian parliamentary discourse on energy, petroleum, and climate transition — curated for the study of **ideological disavowal**.
 
 The corpus is both a research tool and a publishable research object in its own right. It is designed to support discourse-analytic, computational, and mixed-methods research on how states simultaneously perform green identities while sustaining extractive economies.
 
-The NGDC follows the model established by Prof. Slava Jankin (Hertie School / University of Birmingham) with the [UN General Debate Corpus](https://github.com/sjankin) — a transparent, reusable, publicly documented research object. The README and curation logic constitute the intellectual contribution; the corpus is its empirical evidence.
+POLARIS follows the model established by Prof. Slava Jankin (Hertie School / University of Birmingham) with the [UN General Debate Corpus](https://github.com/sjankin) — a transparent, reusable, publicly documented research object. The README and curation logic constitute the intellectual contribution; the corpus is its empirical evidence.
 
 ---
 
@@ -30,7 +30,7 @@ The corpus begins in 2016 (the year of Paris Agreement ratification). This is th
 
 ### Cross-Institutional Scope
 
-The NGDC covers three institutional sites of disavowal:
+POLARIS covers three institutional sites of disavowal:
 
 | Institution | Source | Role in corpus |
 |---|---|---|
@@ -187,7 +187,7 @@ All scripts are commented and publicly available in `/scripts/`. The corpus can 
 **To reproduce:**
 ```bash
 # Clone repository
-git clone https://github.com/odripads/ngdc.git
+git clone https://github.com/odripads/polaris.git
 cd ngdc
 
 # Crawl all sessions (takes ~90 minutes)
@@ -203,7 +203,7 @@ python3 scripts/crawl_phase2.py
 
 If you use this corpus, please cite:
 
-> Kalcer Institute (2026). *Norwegian Green Discourse Corpus (NGDC), v1.0*. [Data set]. https://github.com/odripads/ngdc
+> Kalcer Institute (2026). *POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget), v1.0*. [Data set]. https://github.com/odripads/polaris
 
 ---
 

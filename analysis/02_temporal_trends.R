@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 02: Temporal Trends
+# POLARIS Analysis — Script 02: Temporal Trends
 # Kalcer Institute | Odri | May 2026
 #
 # The core empirical claim: as petroleum extraction continues or increases,
@@ -56,7 +56,7 @@ p1 <- trend_long %>%
     title    = "Speeches mentioning 'petroleum' vs 'klima', by session",
     subtitle = "Stortinget plenary debates, 2016–2025 | N = 15,210 keyword-matched speeches",
     x = NULL, y = "Speeches (count)",
-    caption  = "Norwegian Green Discourse Corpus (NGDC) | Kalcer Institute, 2026"
+    caption  = "POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget) | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -76,7 +76,7 @@ p2 <- summary %>%
     title    = "Petroleum/Klima speech ratio, 2016–2025",
     subtitle = "Speeches naming 'petroleum' as a fraction of those naming 'klima'\nFalling ratio = petroleum progressively absent from discourse while extraction continues",
     x = NULL, y = "Ratio (petroleum ÷ klima)",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -95,9 +95,9 @@ p3 <- trend_long %>%
   )) +
   labs(
     title    = "All major keyword categories across sessions",
-    subtitle = "Stortinget plenary debates | NGDC filtered corpus",
+    subtitle = "Stortinget plenary debates | POLARIS filtered corpus",
     x = NULL, y = "Speeches (count)",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -124,7 +124,7 @@ p4 <- speech_type_by_session %>%
     title    = "Speech type composition by session",
     subtitle = "Hauptinnlegg (formal) vs Presinnlegg (brief) vs Replikk (reply)",
     x = NULL, y = "Share of corpus",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_ngdc()
 
@@ -142,7 +142,7 @@ ggsave(file.path(OUT_F, "fig04_speech_type_composition.png"),
 # Combined figure for publication
 combined <- (p1 / p2) + plot_annotation(
   title   = "Disavowal in parliamentary language: petroleum absent, klima present",
-  caption = "Norwegian Green Discourse Corpus (NGDC) | Kalcer Institute, 2026",
+  caption = "POLARIS Corpus (Parliamentary Oil, Legitimacy And Renewables In Stortinget) | Kalcer Institute, 2026",
   theme   = theme(plot.title = element_text(size = 15, face = "bold"))
 )
 ggsave(file.path(OUT_F, "fig00_combined_temporal.png"),

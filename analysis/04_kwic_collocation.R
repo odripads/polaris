@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Analysis — Script 04: KWIC and Collocation
+# POLARIS Analysis — Script 04: KWIC and Collocation
 # Kalcer Institute | Odri | May 2026
 #
 # KWIC = Keyword In Context. The disavowal thesis predicts:
@@ -131,7 +131,7 @@ tryCatch({
                    edge_color  = "#AAAAAA",
                    vertex_labelsize = 3,
                    edge_size   = 3)
-  title(main = "Key term co-occurrence network | NGDC filtered corpus",
+  title(main = "Key term co-occurrence network | POLARIS filtered corpus",
         sub  = "Kalcer Institute, 2026")
 }, error = function(e) {
   plot.new()
@@ -160,9 +160,9 @@ p_col_petro <- col_petro %>%
   coord_flip() +
   labs(
     title    = "Top collocates of 'petroleum'",
-    subtitle = "Words appearing within ±5 tokens of 'petroleum' | NGDC corpus",
+    subtitle = "Words appearing within ±5 tokens of 'petroleum' | POLARIS corpus",
     x = NULL, y = "Co-occurrence frequency",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_bar()
 
@@ -175,9 +175,9 @@ p_col_klima <- col_klima %>%
   coord_flip() +
   labs(
     title    = "Top collocates of 'klima*'",
-    subtitle = "Words appearing within ±5 tokens of 'klima' | NGDC corpus",
+    subtitle = "Words appearing within ±5 tokens of 'klima' | POLARIS corpus",
     x = NULL, y = "Co-occurrence frequency",
-    caption  = "NGDC | Kalcer Institute, 2026"
+    caption  = "POLARIS | Kalcer Institute, 2026"
   ) +
   theme_bar()
 

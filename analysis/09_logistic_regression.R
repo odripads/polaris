@@ -1,5 +1,5 @@
 ###############################################################################
-# NGDC Inferential Analysis — Script 09: Logistic Regression
+# POLARIS Inferential Analysis — Script 09: Logistic Regression
 # Kalcer Institute | Odri | May 2026
 #
 # Research question: does YEAR significantly predict the probability of a
@@ -135,7 +135,7 @@ p_year_pred <- ggplot(year_grid, aes(x = year_start)) +
     title    = "Predicted probability of petroleum mention by year",
     subtitle = "Logistic regression (Model 2) | Reference: Labour, Hovedinnlegg\nRibbon = 95% CI | Points = observed party means",
     x = "Year", y = "P(speech mentions 'petroleum*')",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -175,7 +175,7 @@ p_party_pred <- party_grid %>%
     title    = "Party effect on petroleum mention probability (2020, controlled)",
     subtitle = "Logistic regression Model 2 | Controlling for year and speech type\nPoints = predicted probability; bars = 95% CI | Dashed = Labour reference",
     x = NULL, y = "P(mentions 'petroleum*')",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
@@ -198,7 +198,7 @@ p_coef <- tidy_m2 %>%
     title    = "Logistic regression: odds ratios for petroleum mention",
     subtitle = "Model 2 (year + party + speech type) | OR on log scale\n* p<.05  ** p<.01  *** p<.001 | Robust SEs (HC3)",
     x = NULL, y = "Odds Ratio (log scale)",
-    caption  = "NGDC v1.0 | Kalcer Institute, 2026"
+    caption  = "POLARIS v1.0 | Kalcer Institute, 2026"
   ) +
   theme_minimal(base_family = "Helvetica", base_size = 12) +
   theme(plot.title = element_text(face = "bold"), panel.grid.minor = element_blank())
